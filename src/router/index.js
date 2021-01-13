@@ -11,24 +11,11 @@ const routes = [
     name: "Home",
     component: Home,
     children: [
-      // {
-      //   path: '/',
-      //   name: '首页',
-      //   component: Home,
-      //   meta: { title: '首页' },
-      // },
-      {
-        path: "/",
-        name: "问卷调研",
-        component: resolve => require(['../views/mobileapp/wxfrom.vue'], resolve),
-        meta: { title: '问卷调研' },
-        // component: () => import("../views/mobileapp/wxfrom.vue")
-      },
       {
         path: "/ques/zy",
-        name: "问卷调研",
+        name: "职业素养",
         component: resolve => require(['../views/quesZysuyang/zy.vue'], resolve),
-        meta: { title: '问卷调研' },
+        meta: { title: '职业素养' },
         // component: () => import("../views/mobileapp/wxfrom.vue")
       },
     ]
@@ -38,7 +25,7 @@ const routes = [
 ];
 
 const router = new VueRouter({
-  mode: "history",
+  mode: "hash",
   base: process.env.BASE_URL,
   routes
 });

@@ -4,7 +4,7 @@
 module.exports = {
   outputDir: process.env.VUE_APP_API_OUTPUTDIR_NAME,//打包后的地址文件名
   // baseUrl: '/' + process.env.VUE_APP_API_OUTPUTDIR_NAME,//打包后的路径
-  publicPath: process.env.VUE_APP_API_PUBLICPATH,//'/questionnaire-frontend/'
+  publicPath: './',//'/questionnaire-frontend/'
   productionSourceMap: false,
   lintOnSave: false,
   css: {
